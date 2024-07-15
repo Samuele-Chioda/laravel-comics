@@ -1,6 +1,6 @@
 <header>
     <section class="logo">
-        {{-- <img src="../assets/img/img/dc-logo.png" alt="logo"> --}}
+        {{-- <img src="" alt="logo"> --}}
     </section>
     <section class="navbar">
         <ul>
@@ -10,6 +10,8 @@
         </ul>
     </section>
     <div class="jumbo-section">
-        {{-- <img :src="" alt="jumbo"> --}}
+        <img src="../img/jumbotron.jpg" alt="">
     </div>
+    {{-- <img src="../img/dc-logo.png" alt=""> --}}
+
 </header>
