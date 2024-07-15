@@ -1,17 +1,14 @@
 <header>
     <section class="logo">
-        {{-- <img src="" alt="logo"> --}}
+        <img src="{{ asset('img/dc-logo.png') }}" alt="Logo">
     </section>
     <section class="navbar">
         <ul>
-            <li>
-                <a>link</a>
-            </li>
+            @foreach($headerLinks as $link)
+                <li class="{{ $link['active'] ? 'active' : '' }}">
+                    <a href="#">{{ $link['name'] }}</a>
+                </li>
+            @endforeach
         </ul>
     </section>
-    <div class="jumbo-section">
-        <img src="../img/jumbotron.jpg" alt="">
-    </div>
-    {{-- <img src="../img/dc-logo.png" alt=""> --}}
-
 </header>

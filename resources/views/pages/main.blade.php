@@ -12,11 +12,25 @@
     @include('partials.header')
 
     <main>
+        <div class="jumbo-section">
+            <img src="../img/jumbotron.jpg" alt="">
+        </div>
         <div class="black-section">
+            <section class="immagini">
+                <div class="cards">
+                        @foreach ($comicsCards as $card)
+                        <section class="card">
+                        <img src="{{ $card['thumb'] }}" alt="{{ $card['title'] }}">
+                        <p>{{ $card['title'] }}</p>
+                    </section>
+                        @endforeach
+                </div>
+            </section>
         </div>
         <div class="blue-section">
+
             <section class="last-photo d-flex">
-                {{-- <img class="info" :src="info.src" :alt="info.alt"> --}}
+                {{-- <img src="{{ $}}" alt=""> --}}
                 <p>infoooooooooo</p>
             </section>
         </div>
@@ -46,8 +60,8 @@
             </section>
 
             <div class="logo-grande">
-                {{-- <img class="logo-grande" src="../assets/img/img/dc-logo-bg.png" alt="logo-grande"> --}}
-            </div>
+            {{-- <img class="logo-grande" src="{{ asset('img/dc-logo-bg.png') }}" alt="logo-grande"> --}}
+        </div>
         </div>
     </main>
 

@@ -67,7 +67,7 @@ Route::get('/', function () {
             "active" => false,
         ],
     ];
-    $comics = [
+    $comicsCards = [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
             "description" => "The celebration of 1,000 issues of Action Comics continues with a new, Deluxe Edition of the amazing comic that won raves when it hit comics shops in April! This hardcover includes all the stories from that issue, plus the tale by writer Paul Levitz and artist Neal Adams that appeared in the Action Comics: 80 Years Of Superman hardcover, as well as all the variant covers, design sketches by Jim Lee for Superman’s new look, scripts for the stories, the original art from the lost story featuring art by Curt Swan and more! Plus: a complete reprint of the stories that started it all—the Superman stories Action Comics #1 and 2 from 1938!",
@@ -177,7 +177,36 @@ Route::get('/', function () {
             "type" => "graphic novel",
         ]
     ];
-    $FooterLinksOne = [
+
+    $fiveImg = [
+        [
+            "id" => 1,
+            "info" => "DIGITAL COMICS",
+            "thumb" => asset('img/buy-comics-digital-comics.png'),
+        ],
+        [
+            "id" => 2,
+            "info" => "DC MERCHANDISE",
+            "thumb" => asset('img/buy-comics-merchandise.png'),
+        ],
+        [
+            "id" => 3,
+            "info" => "LOCATOR",
+            "thumb" => asset('img/buy-comics-shop-locator.png'),
+        ],
+        [
+            "id" => 4,
+            "info" => "SUBSCRIPTION",
+            "thumb" => asset('img/buy-comics-subscriptions.png'),
+        ],
+        [
+            "id" => 5,
+            "info" => "POWER VISA",
+            "thumb" => asset('img/buy-dc-power-visa.svg'),
+        ],
+    ];
+
+    $FooterLinksFirst = [
         [
             "id" => 1,
             "name" => 'Characters',
@@ -215,7 +244,7 @@ Route::get('/', function () {
             "name" => 'news',
         ],
     ];
-    $FooterLinksOneShop = [
+    $FooterLinksFirstShop = [
         [
             "id" => 1,
             "name" => 'shop DC',
@@ -225,7 +254,7 @@ Route::get('/', function () {
             "name" => 'shop DC collectibles',
         ],
     ];
-    $FooterLinksTwo = [
+    $FooterLinksSecond = [
         [
             "id" => 1,
             "name" => 'Terms Of Use',
@@ -271,7 +300,7 @@ Route::get('/', function () {
             "name" => 'Contact Us',
         ],
     ];
-    $FooterLinksThree = [
+    $FooterLinksThird = [
         [
             "id" => 1,
             "name" => 'DC',
@@ -294,5 +323,13 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('pages.main', compact("headerLinks", "comics", "FooterLinksOne", "FooterLinksOneShop", "FooterLinksTwo", "FooterLinksThree"));
+    return view('pages.main', compact(
+        "headerLinks",
+        "comicsCards",
+        "fiveImg",
+        "FooterLinksFirst",
+        "FooterLinksFirstShop",
+        "FooterLinksSecond",
+        "FooterLinksThird"
+    ));
 });
