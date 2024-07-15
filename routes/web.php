@@ -323,6 +323,29 @@ Route::get('/', function () {
         ],
     ];
 
+    $loghi[
+        [
+            "logo1" => "facebook",
+            "thumb" => asset("img/footer-facebook.png")
+        ],
+        [
+            "logo1" => "periscope",
+            "thumb" => asset("img/footer-periscope.png")
+        ],
+        [
+            "logo1" => "pinterest",
+            "thumb" => asset("img/footer-pinterest.png")
+        ],
+        [
+            "logo1" => "twitter",
+            "thumb" => asset("img/footer-twitter.png")
+        ],
+        [
+            "logo1" => "youtube",
+            "thumb" => asset("img/footer-youtube.png")
+        ],
+    ];
+
     return view('pages.main', compact(
         "headerLinks",
         "comicsCards",

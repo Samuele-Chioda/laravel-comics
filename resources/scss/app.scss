@@ -45,7 +45,6 @@ header {
 main {
     .jumbo-section img {
         width: 100%;
-        height: auto;
     }
 
     .black-section {
@@ -60,7 +59,7 @@ main {
     }
 
     .center-section {
-        background-image: url('../assets/img/img/footer-bg.jpg');
+        background-image: url('/public/img/footer-bg.jpg');
         background-position: cover;
         background-repeat: repeat-x;
     }
@@ -88,6 +87,10 @@ main {
     // da qui comincia la parte centrale del main
 
     .logo-grande {
+        img{
+            width: 50%;
+        }
+
         width: 50%;
         display: flex;
         justify-content: center;
@@ -191,7 +194,7 @@ footer {
 
     h1 {
         text-transform: uppercase;
-        color: #0282f9;
+        color: white;
         margin-right: .5rem;
         padding: 0.5rem;
     }

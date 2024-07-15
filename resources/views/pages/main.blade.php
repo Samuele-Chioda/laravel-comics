@@ -28,40 +28,56 @@
             </section>
         </div>
         <div class="blue-section">
-
-            <section class="last-photo d-flex">
-                {{-- <img src="{{ $}}" alt=""> --}}
-                <p>infoooooooooo</p>
-            </section>
-        </div>
+                @foreach ($fiveImg as $img)
+                    <div class="last-photo d-flex">
+                        <img src="{{ $img['thumb'] }}" alt="{{ $img['info'] }}">
+                        <p>{{ $img['info'] }}</p>
+                    </div>
+                @endforeach
+            </div>
         <div class="center-section">
             <section id="lists">
                 <div class="list first-list">
                     <ul>
+                        @foreach ($FooterLinksFirst as $FooterLinkFirst)
                         <li>
-                            <a href="">cliccami</a>
+                            <a href="#"> {{$FooterLinkFirst['name']}} </a>
                         </li>
+                        @endforeach
                     </ul>
                 </div>
-                <div class="list">
+                <div class="list second-list">
                     <ul>
+                        @foreach ($FooterLinksFirstShop as $FooterLinkFirstShop)
                         <li>
-                            <a href="">cliccami</a>
+                            <a href="#"> {{$FooterLinkFirstShop['name']}} </a>
                         </li>
+                        @endforeach
                     </ul>
                 </div>
-                <div class="list">
+                <div class="list third-list">
                     <ul>
+                        @foreach ($FooterLinksSecond as $FooterLinkSecond)
                         <li>
-                            <a href="">cliccami</a>
+                            <a href="#"> {{$FooterLinkSecond['name']}} </a>
                         </li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="list fourth-list">
+                    <ul>
+                        @foreach ($FooterLinksThird as $FooterLinkThird)
+                        <li>
+                            <a href="#"> {{$FooterLinkThird['name']}} </a>
+                        </li>
+                        @endforeach
                     </ul>
                 </div>
             </section>
 
             <div class="logo-grande">
-            {{-- <img class="logo-grande" src="{{ asset('img/dc-logo-bg.png') }}" alt="logo-grande"> --}}
-        </div>
+                <img src="../img/dc-logo-bg.png" alt="">
+            </div>
         </div>
     </main>
 
