@@ -1,4 +1,3 @@
-<template>
     <footer>
         <section class="left-sec">
             <button>Sign-up now!</button>
@@ -6,8 +5,7 @@
         <section class="right-sec">
             <h1>Follow us</h1>
             <div>
-                <img>
+                {{-- <img> --}}
             </div>
         </section>
     </footer>
-</template>

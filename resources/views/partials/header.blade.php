@@ -9,4 +9,7 @@
             </li>
         </ul>
     </section>
+    <div class="jumbo-section">
+        {{-- <img :src="" alt="jumbo"> --}}
+    </div>
 </header>
