@@ -1,1 +1,74 @@
 @import "~bootstrap/scss/bootstrap";
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        list-style-type: none;
+        margin-right: 2rem;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        color: #0282f9;
+
+    }
+
+    li:hover {
+        border-bottom: 5px solid #0282f9;
+        color: #0282f9;
+    }
+}
+
+footer {
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+
+    button {
+        padding: 1rem;
+        background-color: #303030;
+        border: 3px solid #0282f9;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        color: #0282f9;
+        margin-right: .5rem;
+        padding: 0.5rem;
+    }
+
+    .right-sec {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        margin-right: .5rem;
+        width: 100%;
+        padding: .5rem}
+}

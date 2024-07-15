@@ -8,6 +8,11 @@
     @vite('resources/js/app.js')
 </head>
 <body>
+    <main>
+        <h1>
+            ciaoooooooooooooooooooooo
+        </h1>
+    </main>
 
 </body>
 </html>
