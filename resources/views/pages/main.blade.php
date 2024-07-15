@@ -37,7 +37,7 @@
             </div>
         <div class="center-section">
             <section id="lists">
-                <div class="list first-list">
+                <div class="list first-list" id="margin-bottom">
                     <ul>
                         @foreach ($FooterLinksFirst as $FooterLinkFirst)
                         <li>
@@ -45,8 +45,6 @@
                         </li>
                         @endforeach
                     </ul>
-                </div>
-                <div class="list second-list">
                     <ul>
                         @foreach ($FooterLinksFirstShop as $FooterLinkFirstShop)
                         <li>

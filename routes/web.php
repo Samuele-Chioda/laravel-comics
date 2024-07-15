@@ -209,59 +209,55 @@ Route::get('/', function () {
     $FooterLinksFirst = [
         [
             "id" => 1,
-            "name" => 'Characters',
+            "name" => 'DC COMICS',
         ],
         [
             "id" => 2,
-            "name" => 'comics',
+            "name" => 'Characters',
         ],
         [
             "id" => 3,
-            "name" => 'movies',
+            "name" => 'Movies',
         ],
         [
             "id" => 4,
-            "name" => 'tv',
+            "name" => 'Tv',
         ],
         [
             "id" => 5,
-            "name" => 'games',
+            "name" => 'Games',
         ],
         [
             "id" => 6,
-            "name" => 'collectibles',
+            "name" => 'Videos',
         ],
         [
             "id" => 7,
-            "name" => 'videos',
-        ],
-        [
-            "id" => 8,
-            "name" => 'fans',
-        ],
-        [
-            "id" => 9,
-            "name" => 'news',
+            "name" => 'News',
         ],
     ];
     $FooterLinksFirstShop = [
         [
             "id" => 1,
-            "name" => 'shop DC',
+            "name" => 'SHOP',
         ],
         [
             "id" => 2,
+            "name" => 'Shop DC',
+        ],
+        [
+            "id" => 3,
             "name" => 'shop DC collectibles',
         ],
     ];
     $FooterLinksSecond = [
         [
             "id" => 1,
-            "name" => 'Terms Of Use',
+            "name" => 'DC',
         ],
         [
             "id" => 2,
-            "name" => 'Privacy policy (new)',
+            "name" => 'PTerms of us',
         ],
         [
             "id" => 3,
@@ -285,7 +281,7 @@ Route::get('/', function () {
         ],
         [
             "id" => 8,
-            "name" => 'CPS Certificates',
+            "name" => 'CSPS Certificates',
         ],
         [
             "id" => 9,
@@ -299,15 +295,19 @@ Route::get('/', function () {
             "id" => 11,
             "name" => 'Contact Us',
         ],
+        [
+            "id" => 12,
+            "name" => 'Privacy Policy (New)',
+        ],
     ];
     $FooterLinksThird = [
         [
             "id" => 1,
-            "name" => 'DC',
+            "name" => 'SITES',
         ],
         [
             "id" => 2,
-            "name" => 'Mag Magazine',
+            "name" => 'MAD Magazine',
         ],
         [
             "id" => 3,
@@ -323,7 +323,7 @@ Route::get('/', function () {
         ],
     ];
 
-    $loghi[
+    $loghi = [
         [
             "logo1" => "facebook",
             "thumb" => asset("img/footer-facebook.png")
@@ -353,6 +353,7 @@ Route::get('/', function () {
         "FooterLinksFirst",
         "FooterLinksFirstShop",
         "FooterLinksSecond",
-        "FooterLinksThird"
+        "FooterLinksThird",
+        "loghi"
     ));
 });
